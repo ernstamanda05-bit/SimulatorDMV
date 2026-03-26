@@ -26,6 +26,6 @@ public class DmvSimulator {
             current++;
         }
 
-        System.out.println("Sorry, you don't have the required paperwork.");
+        System.out.println("Sorry you nasty piece of human garbage, you don't have the required paperwork.");
     }
 }
