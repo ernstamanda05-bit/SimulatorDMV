@@ -13,19 +13,25 @@ public class DmvSimulator {
         int current = userNumber + 1;
 
         while (true) {
-            if (current > 200) {
+            if (current > 200) { 
                 current = 1;
             }
 
+            System.out.println("Now serving number: " + current);
+
             if (current == userNumber) {
-                System.out.println("Now serving number: " + current);
                 break;
             }
 
-            System.out.println("Now serving number: " + current);
             current++;
         }
 
+        int chance = rand.nextInt(100);
+
+        if (chance == 0) {
+            System.out.println("Wait... it's a miracle! You actually have all the required paperwork. You're all set!");
+        } else {
         System.out.println("Sorry you nasty piece of human garbage, you don't have the required paperwork MWAHAHAHAHAHAHAHA.");
     }
+}
 }
